@@ -124,9 +124,7 @@ def csvwriter (directory,filename, output):
 
 
             
-directory = r'C:\Users\ShahinF1\AECOM\CO Comprehensive Dam Safety Evaluation (CDSE). - General\Working - Fossil Creek\Key Reference Documents\Reports'
+directory = r'enter your directory here'
 os.chdir(directory)
-output=UI(directory,"dam crest")
-csvwriter(directory,"dam_crest_lookup",output)
-
-#if __name__ == "__main__":
+output=UI(directory,"enter word/phrase to look up")
+csvwriter(directory,"output.csv",output)
