@@ -6,7 +6,6 @@ import io
 import os
 import csv
 
-directory = '/Users/faisalshahin/Documents/'
 os.chdir(directory)
 
 # Extract text from the PDF
@@ -90,6 +89,6 @@ def UI(directory, word_to_find):
     img_words=find_paragraph(words_in_pdf_img,word_to_find)
     output.append((img_words))
     return output
-print(UI(directory,"Faisal")[0])
+print(UI(directory,"random word"))
 
 #if __name__ == "__main__":
